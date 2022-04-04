@@ -1,21 +1,19 @@
 # Assignment
-## _v1.1.0_
-
-We’d like you to create a small e-commerce application for us to get some insights in your skillset. Focus on the PHP and especially the separation of concern, the UI is optional. Please dont spend more than two hours on this assignment.
-
-# Don’ts
-- Don't spend more than two hours
-- Do not include new packages.
 
 # Installation
-- `git clone git@github.com:Orderchamp/assignment.git`
+- `git clone git@github.com:DominikHurtienne/assignment.git`
 - `composer install`
 - `php artisan serve`
+- `php artisan migrate`
+- `php artisan db:seed` (adds 10 products)
 
-# Description
-Our users should be able to add products that are in stock to their shopping cart. During checkout, our visitors should be able to become users and our users should be able to review their previously stored information (name, address, contact details).
+# What I did
+Working prototype, visit `/products`
 
-Fifteen minutes after checkout, a user should receive a discount code of € 5,- for future purchases. If a user chooses to use a discount code, you should keep track of what discount code was applied and what amount was subtracted from the checkout.
+Initially created products are shown in a simple view, clicking on the add to cart button adds them in the database to the corresponding card tables.
 
-# Out-of-scope
-The UI is optional. Payments in this application are based on invoices. Invoices are out of scope :-)
+
+# Out-of-scope due to time constraint
+- reduce the number of available products when adding to card
+- backend validation when adding to cart.
+- checkout, registration, coupon creation and sending
