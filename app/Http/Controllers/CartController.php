@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace App\Http\Controllers;
 
 use App\Models\Product;
@@ -9,7 +11,7 @@ use App\Services\CartService;
 class CartController
 {
     /** @var CartService */
-    private $cartService;
+    private $cartService; // would add typed properties in php7.4
 
     public function __construct(CartService $cartService)
     {
