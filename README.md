@@ -15,5 +15,6 @@ Initially created products are shown in a simple view, clicking on the add to ca
 
 # Out-of-scope due to time constraint
 - reduce the number of available products when adding to card
+- write tests (unit and feature)
 - backend validation when adding to cart.
 - checkout, registration, coupon creation and sending
